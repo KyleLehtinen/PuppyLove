@@ -141,25 +141,99 @@ span {
 .aside-media-object {
 	background-color: #FF0000;
 	display: flex;
+	align-items: flex-start;
+}
+
+.media-graphic {
+	padding: 0;
+}
+
+.media-graphic > img{
+	width: 55px;
+	height: 55px;
 }
 
 .media-content {
 	background-color: #FFFF00;
-	display: flex;
+	font-size: 0.7em;
+	padding: 0 .5em 0 .5em;
 }
 
 .main-media-container {
 	display: flex;
+	justify-content: space-around;
+	background-color: #0000FF;
+	flex: 2;
+	flex-wrap: wrap;
+	align-items: flex-start ;
+	font-size: 0.7em;
+	padding: 0.5em;
 }
 
+.main-media-container> *+* {
+	padding-top: 0.5em;
+}
+
+.main-media-object {
+    background-color: #FF0000;
+    padding: 0;
+}
+
+.main-media-graphic {
+	padding: 0;
+	margin: 0;
+}
+
+.main-media-graphic > img {
+	width: 110px;
+	height: 110px;
+}
+
+.main-media-content {
+	background-color: #FFFF00;
+}
+
+.main-media-content > h4 {
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    border-bottom: solid black 1px;
+}
+
+.main-media-content > p {
+	padding: 0;
+	margin: 0;
+	word-wrap: break-word;
+}
+
+
 aside {
-	background-color: #00FF00;
+    background-color: #00FF00;
+    flex: 1.4;
+    justify-content: space-around;
+    padding: .5em;
 }
 
 aside > *+* {
-	margin-top:.5em;
-}
+	margin-top: .5em;}
 
 .pop-out-button {
     font-size: 0.75em;
 }
+
+.media-content-header {
+	margin: 0;
+	font-weight: 700;
+} 
+
+.media-content-para {
+	margin: 0;
+	padding: 0 .2em 0 .1em;
+}
+
+.main-container {
+	display: flex;
+	background-color: #FFC0CB;
+}
+
+
