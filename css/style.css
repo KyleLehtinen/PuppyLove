@@ -1,0 +1,165 @@
+/************
+RESETS
+************/
+
+html {
+    box-sizing: border-box;
+    color: #444;
+    font: 12pt 'Open Sans', Arial;
+    font-weight: 300;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+/**********
+LAYOUT
+**********/
+
+.hero {
+	background-color: #11AABA;
+	color: #FFF;
+}
+
+main {
+	background-color: #800080;
+}
+
+.hero-main-container {
+    position: relative;
+    background-color: #87D4DC;
+    margin: auto;
+    width: 83%;
+    height: 306px;
+}
+
+.primary-content {
+	margin: auto;
+	width: 83%;
+}
+
+body {
+	font-weight: 400;
+}
+
+header {
+	background-color: #FFA500;
+    position: relative;
+    height: 66px;
+}
+
+h1.logo {
+	background-color: #FF0000;
+    /* display: inline-block; */
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    /* text-decoration: none; */
+    font-size: 0.7em;
+    margin: 0;
+}
+
+.search-container {
+    background-color: #0000FF;
+    font-size: 0.75em;
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+.search-field {
+	width: 142px;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 0.65em 0.35em;
+    margin: 0;
+    justify-content: space-around;
+    background-color: #008000;
+}
+
+li {
+	font-size: 0.7em;
+    font-weight: 400;
+    text-transform: uppercase;
+    list-style-type: none
+}
+
+.hero-greeting {
+	position: absolute;
+	bottom: 20px;
+	background-color: #FF00FF;
+	text-align: center;
+	width: 100%;
+}
+
+.hero-greeting > h3 {
+	font-size: 1.72em;
+	font-weight: 300;
+    margin: 0;
+}
+
+.hero-greeting > p {
+	font-size: 0.69em;
+}
+
+span {
+	font-weight: 700;
+}
+
+.pop-out-container {
+	position: relative;
+	text-align: center;
+	background-color: #008000;
+}
+
+.pop-out {
+    display: inline-block;
+    background-color: #00FF00;
+    text-align: center;
+    width: 207px;
+    margin: 0 .16em;
+    transform: translateY(-11px);
+}
+
+.pop-out-header {
+    font-weight: 700;
+    font-size: 0.7em;
+    margin: .5em;
+}
+
+.pop-out-content {
+    font-size: .7em;
+    margin: 1em;
+}
+
+.aside-media-object {
+	background-color: #FF0000;
+	display: flex;
+}
+
+.media-content {
+	background-color: #FFFF00;
+	display: flex;
+}
+
+.main-media-container {
+	display: flex;
+}
+
+aside {
+	background-color: #00FF00;
+}
+
+aside > *+* {
+	margin-top:.5em;
+}
+
+.pop-out-button {
+    font-size: 0.75em;
+}
