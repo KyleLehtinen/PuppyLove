@@ -20,17 +20,19 @@ LAYOUT
 **********/
 
 .hero {
-	background-color: #11AABA;
-	color: #FFF;
+    background: radial-gradient(rgba(3,143,168,0.7),rgba(3,143,168,0.95) ), url(../img/bg.jpg);
+    background-size: 100% 100%;
+    color: #FFF;
+    background-repeat: no-repeat;
 }
 
 main {
-	background-color: #800080;
+    background-color: #D7E1E7;
 }
 
 .hero-main-container {
     position: relative;
-    background-color: #87D4DC;
+    /*background-color: #87D4DC;*/
     margin: auto;
     width: 83%;
     height: 306px;
@@ -46,51 +48,84 @@ body {
 }
 
 header {
-	background-color: #FFA500;
+	/*background-color: #FFA500;*/
     position: relative;
     height: 66px;
 }
 
 h1.logo {
-	background-color: #FF0000;
+    /* background-color: #FF0000; */
+    font-family: Lobster;
     position: absolute;
     top: 2px;
     left: 2px;
-    font-size: 0.7em;
+    font-size: 2.2em;
     margin: 0;
 }
 
+.logo a {
+    text-decoration: none;
+}
+
 .search-container {
-    background-color: #0000FF;
     font-size: 0.75em;
-    width: 200px;
+    width: 189px;
     position: absolute;
     right: 0px;
     top: 10px;
 }
 
 .search-field {
-	width: 142px;
+    color: #55B0BC;
+    width: 135px;
+    border: solid #55B0BC 0.1em;
+    background: transparent;
+    padding-left: 0.2em;
+    font-weight: 100;
+}
+
+.search-button {
+    border-radius: 2px;
+    background-color: #E9501A;
+    color: #FFF;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: #55B0BC;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #55B0BC; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #55B0BC;
+}
+
+:-ms-input-placeholder {  
+    color: #55B0BC;
 }
 
 .nav-bar {
     display: flex;
-    padding: 0.65em 0.35em;
+    padding: 0.65em 2em;
     margin: 0;
     justify-content: space-around;
-    background-color: #008000;
+    border-top: solid #55B0BC 1px;
+    border-bottom: solid #55B0BC 1px;
 }
 
 li {
-	font-size: 0.7em;
-    text-transform: uppercase;
-    list-style-type: none
+    font-size: 0.7em;
+    font-weight: 300;
+    list-style-type: none;
 }
 
 .hero-greeting {
 	position: absolute;
 	bottom: 20px;
-	background-color: #FF00FF;
+	/*background-color: #FF00FF;*/
 	text-align: center;
 	width: 100%;
 }
@@ -112,16 +147,36 @@ span {
 .pop-out-container {
 	position: relative;
 	text-align: center;
-	background-color: #008000;
 }
 
 .pop-out {
     display: inline-block;
-    background-color: #00FF00;
+    background-color: #FFFFFF;
     text-align: center;
     width: 207px;
     margin: 0 .16em;
     transform: translateY(-11px);
+}
+
+/*************
+Box Shadow for pop-out and main sections 
+*************/
+.pop-out, .main-container {
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+}
+
+.get-help {
+    border-top: solid #E55522 2px;
+}
+
+.food {
+    border-top: solid #8ECE46 2px;
+}
+
+.sell {
+    border-top: solid #0792D3 2px;
 }
 
 .pop-out-header {
@@ -135,8 +190,33 @@ span {
     margin: 1em;
 }
 
+.pop-out > button {
+    font-size: 0.6em;
+    font-weight: 600;
+    background: transparent;
+    margin-bottom: 0.7em;
+}
+
+.get-help > button {
+    border: solid #E55522 1px ;
+    border-radius: 2px;
+    color: #E55522;
+}
+
+.food > button {
+    border: solid #8ECE46 1px ;
+    border-radius: 2px;
+    color: #8ECE46;
+}
+
+.sell > button {
+    border: solid #0792D3 1px ;
+    border-radius: 2px;
+    color: #0792D3;
+}
+
 .aside-media-object {
-    background-color: #FF0000;
+    background-color: #E8F3F9;
     display: flex;
     align-items: flex-start;
 }
@@ -147,14 +227,21 @@ span {
 }
 
 .media-content {
-    background-color: #FFFF00;
     font-size: 0.7em;
     padding: 0 .5em 0 .5em;
     flex: 1;
 }
 
+.media-content > h4 {
+    color: #0792D3;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 .2em 0 .1em;
+}
+
 .main-media-container {
-    background-color: #0000FF;
+    background-color: #FFFFFF;
     flex: 2;
     font-size: 0.7em;
     padding: 0.5em;
@@ -184,20 +271,23 @@ span {
 }
 
 .main-media-content > h4 {
-    font-weight: 700;
-    padding: 0;
+    background-color: #8ECF41;
+    font-weight: 300;
+    padding: 0.2em;
     margin: 0;
-    border-bottom: solid black 1px;
 }
 
 .main-media-content > p {
-	padding: 0;
+    font-weight: 400;
+	padding: 0.2em;
 	margin: 0;
+    background-color: #E3EFD6;
+    color: #426805;
 }
 
 aside {
     display: flex;
-    background-color: #00FF00;
+    background-color: #FFFFFF;
     flex: 1.4;
     justify-content: start;
     padding: .5em;
@@ -206,10 +296,6 @@ aside {
 
 aside > *+* {
 	margin-top: .5em;
-}
-
-.pop-out-button {
-    font-size: 0.75em;
 }
 
 .media-content-header {
@@ -225,4 +311,8 @@ aside > *+* {
 .main-container {
 	display: flex;
 	background-color: #FFC0CB;
+}
+
+main {
+    padding-bottom: 1em;
 }
