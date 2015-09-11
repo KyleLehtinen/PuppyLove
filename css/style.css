@@ -83,7 +83,6 @@ h1.logo {
 
 li {
 	font-size: 0.7em;
-    font-weight: 400;
     text-transform: uppercase;
     list-style-type: none
 }
@@ -205,14 +204,6 @@ aside {
     flex-direction: column;
 }
 
-/*aside {
-    background-color: #00FF00;
-    flex: 1.4;
-    justify-content: space-around;
-    padding: .5em;
-}
-*/
-
 aside > *+* {
 	margin-top: .5em;
 }
@@ -235,5 +226,3 @@ aside > *+* {
 	display: flex;
 	background-color: #FFC0CB;
 }
-
-
