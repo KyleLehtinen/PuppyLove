@@ -1,12 +1,11 @@
 /************
 RESETS
 ************/
-
 html {
     box-sizing: border-box;
     color: #444;
     font: 12pt 'Open Sans', Arial;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 *, *::before, *::after {
@@ -16,9 +15,8 @@ html {
 }
 
 /**********
-LAYOUT
+DESIGN LAYOUT 
 **********/
-
 .hero {
     background: radial-gradient(rgba(3,143,168,0.7),rgba(3,143,168,0.95) ), url(../img/bg.jpg);
     background-size: 100% 100%;
@@ -26,85 +24,39 @@ LAYOUT
     background-repeat: no-repeat;
 }
 
-main {
-    background-color: #D7E1E7;
-}
-
 .hero-main-container {
     position: relative;
-    /*background-color: #87D4DC;*/
     margin: auto;
-    width: 83%;
+    width: 650px;
     height: 306px;
 }
 
+main {
+    background-color: #D7E1E7;
+    padding-bottom: 1em;
+}
+
 .primary-content {
-	margin: auto;
-	width: 83%;
+    margin: auto;
+    width: 650px;
 }
 
-body {
-	font-weight: 400;
+/***********************************
+DESIGN LAYOUT - HELPERS
+************************************/
+/*Box Shadows*/
+.pop-out, .main-container {
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
 }
 
+/***********************************
+HERO SECTION - COMPONENTS
+************************************/
 header {
-	/*background-color: #FFA500;*/
     position: relative;
     height: 66px;
-}
-
-h1.logo {
-    /* background-color: #FF0000; */
-    font-family: Lobster;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    font-size: 2.2em;
-    margin: 0;
-}
-
-.logo a {
-    text-decoration: none;
-}
-
-.search-container {
-    font-size: 0.75em;
-    width: 189px;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-}
-
-.search-field {
-    color: #55B0BC;
-    width: 135px;
-    border: solid #55B0BC 0.1em;
-    background: transparent;
-    padding-left: 0.2em;
-    font-weight: 100;
-}
-
-.search-button {
-    border-radius: 2px;
-    background-color: #E9501A;
-    color: #FFF;
-    border: none;
-}
-
-::-webkit-input-placeholder {
-    color: #55B0BC;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-    color: #55B0BC; 
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-    color: #55B0BC;
-}
-
-:-ms-input-placeholder {  
-    color: #55B0BC;
 }
 
 .nav-bar {
@@ -116,18 +68,86 @@ h1.logo {
     border-bottom: solid #55B0BC 1px;
 }
 
+.hero-greeting {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h1.logo {
+    font-family: Lobster;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 2.2em;
+    margin: 0;
+}
+
+.search-container {
+    font-size: 0.62em;
+    width: 161px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+.search-field {
+    color: #55B0BC;
+    width: 115px;
+    border: solid #55B0BC 0.1em;
+    background: transparent;
+    padding: 0 0 0.2em 0;
+    font-weight: 100;
+}
+
+.search-button {
+    border-radius: 2px;
+    background-color: #E9501A;
+    color: #FFF;
+    border: none;
+    padding: 0.2em 0.4em;
+}
+
 li {
     font-size: 0.7em;
     font-weight: 300;
     list-style-type: none;
 }
 
-.hero-greeting {
-	position: absolute;
-	bottom: 20px;
-	/*background-color: #FF00FF;*/
-	text-align: center;
-	width: 100%;
+span {
+    font-weight: 700;
+}
+
+/***********************************
+HERO SECTION - HELPERS
+************************************/
+.logo a {
+    text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+    color: #55B0BC;
+    padding-left: 0.2em;
+    font-weight: 400;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #55B0BC; 
+    padding-left: 0.2em;
+    font-weight: 400;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #55B0BC;
+    padding-left: 0.2em;
+    font-weight: 400;
+}
+
+:-ms-input-placeholder {  
+    color: #55B0BC;
+    padding-left: 0.2em;
+    font-weight: 400;
 }
 
 .hero-greeting > h3 {
@@ -140,10 +160,9 @@ li {
 	font-size: 0.69em;
 }
 
-span {
-	font-weight: 700;
-}
-
+/***********************************
+MAIN SECTION - COMPONENTS
+************************************/
 .pop-out-container {
 	position: relative;
 	text-align: center;
@@ -156,15 +175,6 @@ span {
     width: 207px;
     margin: 0 .16em;
     transform: translateY(-11px);
-}
-
-/*************
-Box Shadow for pop-out and main sections 
-*************/
-.pop-out, .main-container {
-    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
 }
 
 .get-help {
@@ -190,6 +200,74 @@ Box Shadow for pop-out and main sections
     margin: 1em;
 }
 
+.main-container {
+    display: flex;
+    background-color: #FFC0CB;
+}
+
+aside {
+    display: flex;
+    background-color: #FFFFFF;
+    flex: 1.4;
+    justify-content: start;
+    padding: .5em;
+    flex-direction: column;
+}
+
+aside > *+* {
+    margin-top: .5em;
+}
+
+.aside-media-object {
+    background-color: #E8F3F9;
+    display: flex;
+    align-items: flex-start;
+}
+
+.aside-media-content {
+    font-size: 0.7em;
+    padding: 0 .5em 0 .5em;
+    flex: 1;
+}
+
+.main-media-container {
+    background-color: #FFFFFF;
+    flex: 2;
+    font-size: 0.7em;
+    padding: 0.5em;
+    vertical-align: top;
+}
+
+.main-media-container > *+* {
+    padding-top: 0.5em;
+}
+
+.main-media-object {
+    display: inline-block;
+    background-color: #FF0000;
+    padding: 0px;
+    margin: 0.3em;
+    width: 110px;
+    vertical-align: inherit;
+}
+
+.main-media-content {
+    background-color: #FFFF00;
+}
+
+.media-content-header {
+    margin: 0;
+    font-weight: 700;
+} 
+
+.media-content-para {
+    margin: 0;
+    padding: 0 .2em 0 .1em;
+}
+
+/***********************************
+MAIN SECTION - HELPERS
+************************************/
 .pop-out > button {
     font-size: 0.6em;
     font-weight: 600;
@@ -215,24 +293,7 @@ Box Shadow for pop-out and main sections
     color: #0792D3;
 }
 
-.aside-media-object {
-    background-color: #E8F3F9;
-    display: flex;
-    align-items: flex-start;
-}
-
-.media-graphic, .media-graphic > img {
-	width: 55px;
-	height: 55px;
-}
-
-.media-content {
-    font-size: 0.7em;
-    padding: 0 .5em 0 .5em;
-    flex: 1;
-}
-
-.media-content > h4 {
+.aside-media-content > h4 {
     color: #0792D3;
     font-size: 1.2em;
     font-weight: 300;
@@ -240,34 +301,14 @@ Box Shadow for pop-out and main sections
     padding: 0 .2em 0 .1em;
 }
 
-.main-media-container {
-    background-color: #FFFFFF;
-    flex: 2;
-    font-size: 0.7em;
-    padding: 0.5em;
-    vertical-align: top;
-}
-
-.main-media-container> *+* {
-	padding-top: 0.5em;
-}
-
-.main-media-object {
-    display: inline-block;
-    background-color: #FF0000;
-    padding: 0px;
-    margin: 0.3em;
-    width: 110px;
-    vertical-align: inherit;
+.aside-media-graphic, .aside-media-graphic > img {
+    width: 55px;
+    height: 55px;
 }
 
 .main-media-graphic, .main-media-graphic > img {
 	width: 110px;
 	height: 110px;
-}
-
-.main-media-content {
-	background-color: #FFFF00;
 }
 
 .main-media-content > h4 {
@@ -283,36 +324,4 @@ Box Shadow for pop-out and main sections
 	margin: 0;
     background-color: #E3EFD6;
     color: #426805;
-}
-
-aside {
-    display: flex;
-    background-color: #FFFFFF;
-    flex: 1.4;
-    justify-content: start;
-    padding: .5em;
-    flex-direction: column;
-}
-
-aside > *+* {
-	margin-top: .5em;
-}
-
-.media-content-header {
-	margin: 0;
-	font-weight: 700;
-} 
-
-.media-content-para {
-	margin: 0;
-	padding: 0 .2em 0 .1em;
-}
-
-.main-container {
-	display: flex;
-	background-color: #FFC0CB;
-}
-
-main {
-    padding-bottom: 1em;
 }
