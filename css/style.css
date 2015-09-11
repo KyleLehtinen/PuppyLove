@@ -53,11 +53,9 @@ header {
 
 h1.logo {
 	background-color: #FF0000;
-    /* display: inline-block; */
     position: absolute;
     top: 2px;
     left: 2px;
-    /* text-decoration: none; */
     font-size: 0.7em;
     margin: 0;
 }
@@ -139,35 +137,29 @@ span {
 }
 
 .aside-media-object {
-	background-color: #FF0000;
-	display: flex;
-	align-items: flex-start;
+    background-color: #FF0000;
+    display: flex;
+    align-items: flex-start;
 }
 
-.media-graphic {
-	padding: 0;
-}
-
-.media-graphic > img{
+.media-graphic, .media-graphic > img {
 	width: 55px;
 	height: 55px;
 }
 
 .media-content {
-	background-color: #FFFF00;
-	font-size: 0.7em;
-	padding: 0 .5em 0 .5em;
+    background-color: #FFFF00;
+    font-size: 0.7em;
+    padding: 0 .5em 0 .5em;
+    flex: 1;
 }
 
 .main-media-container {
-	display: flex;
-	justify-content: space-around;
-	background-color: #0000FF;
-	flex: 2;
-	flex-wrap: wrap;
-	align-items: flex-start ;
-	font-size: 0.7em;
-	padding: 0.5em;
+    background-color: #0000FF;
+    flex: 2;
+    font-size: 0.7em;
+    padding: 0.5em;
+    vertical-align: top;
 }
 
 .main-media-container> *+* {
@@ -175,16 +167,15 @@ span {
 }
 
 .main-media-object {
+    display: inline-block;
     background-color: #FF0000;
-    padding: 0;
+    padding: 0px;
+    margin: 0.3em;
+    width: 110px;
+    vertical-align: inherit;
 }
 
-.main-media-graphic {
-	padding: 0;
-	margin: 0;
-}
-
-.main-media-graphic > img {
+.main-media-graphic, .main-media-graphic > img {
 	width: 110px;
 	height: 110px;
 }
@@ -203,19 +194,28 @@ span {
 .main-media-content > p {
 	padding: 0;
 	margin: 0;
-	word-wrap: break-word;
 }
 
-
 aside {
+    display: flex;
+    background-color: #00FF00;
+    flex: 1.4;
+    justify-content: start;
+    padding: .5em;
+    flex-direction: column;
+}
+
+/*aside {
     background-color: #00FF00;
     flex: 1.4;
     justify-content: space-around;
     padding: .5em;
 }
+*/
 
 aside > *+* {
-	margin-top: .5em;}
+	margin-top: .5em;
+}
 
 .pop-out-button {
     font-size: 0.75em;
