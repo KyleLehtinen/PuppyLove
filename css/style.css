@@ -15,9 +15,9 @@ html {
     font: inherit;
 }
 
-/**********
-LAYOUT
-**********/
+body {
+    font-weight: 400;
+}
 
 .hero {
 	background-color: #11AABA;
@@ -32,17 +32,13 @@ main {
     position: relative;
     background-color: #87D4DC;
     margin: auto;
-    width: 83%;
+    width: 960px;
     height: 306px;
 }
 
 .primary-content {
 	margin: auto;
-	width: 83%;
-}
-
-body {
-	font-weight: 400;
+	width: 960px;
 }
 
 header {
@@ -103,10 +99,6 @@ li {
 
 .hero-greeting > p {
 	font-size: 0.69em;
-}
-
-span {
-	font-weight: 700;
 }
 
 .pop-out-container {
@@ -208,7 +200,7 @@ aside > *+* {
 	margin-top: .5em;
 }
 
-.pop-out-button {
+.button {
     font-size: 0.75em;
 }
 
