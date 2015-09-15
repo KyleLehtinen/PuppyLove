@@ -27,60 +27,19 @@ DESIGN LAYOUT
 .hero-main-container {
     position: relative;
     margin: auto;
-    width: 650px;
+    width: 960px;
     height: 306px;
 }
 
-main {
-    background-color: #D7E1E7;
-    padding-bottom: 1em;
-}
-
-.primary-content {
-    margin: auto;
-    width: 650px;
-}
-
-/***********************************
-DESIGN LAYOUT - HELPERS
-************************************/
-/*Box Shadows*/
-.pop-out, .main-container {
-    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
-}
-
-/***********************************
-HERO SECTION - COMPONENTS
-************************************/
 header {
     position: relative;
     height: 66px;
 }
 
-.nav-bar {
-    display: flex;
-    padding: 0.65em 2em;
-    margin: 0;
-    justify-content: space-around;
-    border-top: solid #55B0BC 1px;
-    border-bottom: solid #55B0BC 1px;
-}
-
-.hero-greeting {
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-    width: 100%;
-}
-
-h1.logo {
-    font-family: Lobster;
+.logo {
     position: absolute;
     top: 2px;
     left: 2px;
-    font-size: 2.2em;
     margin: 0;
 }
 
@@ -92,21 +51,13 @@ h1.logo {
     top: 10px;
 }
 
-.search-field {
-    color: #55B0BC;
-    width: 115px;
-    border: solid #55B0BC 0.1em;
-    background: transparent;
-    padding: 0 0 0.2em 0;
-    font-weight: 100;
-}
-
-.search-button {
-    border-radius: 2px;
-    background-color: #E9501A;
-    color: #FFF;
-    border: none;
-    padding: 0.2em 0.4em;
+.nav-bar {
+    display: flex;
+    padding: 0.65em 2em;
+    margin: 0;
+    justify-content: space-around;
+    border-top: solid #55B0BC 1px;
+    border-bottom: solid #55B0BC 1px;
 }
 
 li {
@@ -115,89 +66,26 @@ li {
     list-style-type: none;
 }
 
-span {
-    font-weight: 700;
-}
-
-/***********************************
-HERO SECTION - HELPERS
-************************************/
-.logo a {
-    text-decoration: none;
-}
-
-::-webkit-input-placeholder {
-    color: #55B0BC;
-    padding-left: 0.2em;
-    font-weight: 400;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-    color: #55B0BC; 
-    padding-left: 0.2em;
-    font-weight: 400;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-    color: #55B0BC;
-    padding-left: 0.2em;
-    font-weight: 400;
-}
-
-:-ms-input-placeholder {  
-    color: #55B0BC;
-    padding-left: 0.2em;
-    font-weight: 400;
-}
-
-.hero-greeting > h3 {
-	font-size: 1.72em;
-	font-weight: 300;
-    margin: 0;
-}
-
-.hero-greeting > p {
-	font-size: 0.69em;
-}
-
-/***********************************
-MAIN SECTION - COMPONENTS
-************************************/
-.pop-out-container {
-	position: relative;
-	text-align: center;
-}
-
-.pop-out {
-    display: inline-block;
-    background-color: #FFFFFF;
+.hero-greeting {
+    position: absolute;
+    bottom: 20px;
     text-align: center;
-    width: 207px;
-    margin: 0 .16em;
-    transform: translateY(-11px);
+    width: 100%;
 }
 
-.get-help {
-    border-top: solid #E55522 2px;
+main {
+    background-color: #D7E1E7;
+    padding-bottom: 1em;
 }
 
-.food {
-    border-top: solid #8ECE46 2px;
+.primary-content {
+    margin: auto;
+    width: 960px;
 }
 
-.sell {
-    border-top: solid #0792D3 2px;
-}
-
-.pop-out-header {
-    font-weight: 700;
-    font-size: 0.7em;
-    margin: .5em;
-}
-
-.pop-out-content {
-    font-size: .7em;
-    margin: 1em;
+.pop-out-container {
+    position: relative;
+    text-align: center;
 }
 
 .main-container {
@@ -218,18 +106,6 @@ aside > *+* {
     margin-top: .5em;
 }
 
-.aside-media-object {
-    background-color: #E8F3F9;
-    display: flex;
-    align-items: flex-start;
-}
-
-.aside-media-content {
-    font-size: 0.7em;
-    padding: 0 .5em 0 .5em;
-    flex: 1;
-}
-
 .main-media-container {
     background-color: #FFFFFF;
     flex: 2;
@@ -240,6 +116,79 @@ aside > *+* {
 
 .main-media-container > *+* {
     padding-top: 0.5em;
+}
+
+/***********************************
+DESIGN COMPONENTS
+************************************/
+.logo a {
+    font-family: Lobster;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.search-field {
+    color: #55B0BC;
+    width: 115px;
+    border: solid #55B0BC 0.1em;
+    background: transparent;
+    padding: 0 0 0.2em 0;
+    font-weight: 100;
+}
+
+.search-button {
+    border-radius: 2px;
+    background-color: #E9501A;
+    color: #FFF;
+    border: none;
+    padding: 0.2em 0.4em;
+}
+
+li a {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.hero-greeting > h3 {
+    font-size: 1.72em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.hero-greeting > p {
+    font-size: 0.69em;
+}
+
+.pop-out {
+    display: inline-block;
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 207px;
+    margin: 0 .16em;
+    transform: translateY(-11px);
+}
+
+.pop-out-header {
+    font-weight: 700;
+    font-size: 0.7em;
+    margin: .5em;
+}
+
+.pop-out-content {
+    font-size: .7em;
+    margin: 1em;
+}
+
+.aside-media-object {
+    background-color: #E8F3F9;
+    display: flex;
+    align-items: flex-start;
+}
+
+.aside-media-content {
+    font-size: 0.7em;
+    padding: 0 .5em 0 .5em;
+    flex: 1;
 }
 
 .main-media-object {
@@ -266,8 +215,40 @@ aside > *+* {
 }
 
 /***********************************
-MAIN SECTION - HELPERS
+DESIGN HELPERS
 ************************************/
+/*Box Shadows*/
+.pop-out, .main-container {
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+}
+
+/*Modify placeholder in search field*/
+::-webkit-input-placeholder { /* Chrome */
+    color: #55B0BC;
+    padding-left: 0.2em;
+    font-weight: 400;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #55B0BC; 
+    padding-left: 0.2em;
+    font-weight: 400;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #55B0BC;
+    padding-left: 0.2em;
+    font-weight: 400;
+}
+
+:-ms-input-placeholder {  /* IE */
+    color: #55B0BC;
+    padding-left: 0.2em;
+    font-weight: 400;
+}
+
 .pop-out > button {
     font-size: 0.6em;
     font-weight: 600;
@@ -293,6 +274,18 @@ MAIN SECTION - HELPERS
     color: #0792D3;
 }
 
+.get-help {
+    border-top: solid #E55522 2px;
+}
+
+.food {
+    border-top: solid #8ECE46 2px;
+}
+
+.sell {
+    border-top: solid #0792D3 2px;
+}
+
 .aside-media-content > h4 {
     color: #0792D3;
     font-size: 1.2em;
@@ -307,8 +300,8 @@ MAIN SECTION - HELPERS
 }
 
 .main-media-graphic, .main-media-graphic > img {
-	width: 110px;
-	height: 110px;
+    width: 110px;
+    height: 110px;
 }
 
 .main-media-content > h4 {
@@ -320,8 +313,8 @@ MAIN SECTION - HELPERS
 
 .main-media-content > p {
     font-weight: 400;
-	padding: 0.2em;
-	margin: 0;
+    padding: 0.2em;
+    margin: 0;
     background-color: #E3EFD6;
     color: #426805;
 }
