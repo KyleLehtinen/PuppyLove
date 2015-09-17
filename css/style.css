@@ -28,36 +28,21 @@ DESIGN LAYOUT
     position: relative;
     margin: auto;
     width: 960px;
-    height: 306px;
+    height: 434px;
 }
 
 header {
     position: relative;
-    height: 66px;
-}
-
-.logo {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    margin: 0;
-}
-
-.search-container {
-    font-size: 0.62em;
-    width: 161px;
-    position: absolute;
-    right: 0px;
-    top: 10px;
+    height: 90px;
 }
 
 .nav-bar {
     display: flex;
-    padding: 0.65em 2em;
+    padding: 0.85em 3.4em;
     margin: 0;
     justify-content: space-around;
-    border-top: solid #55B0BC 1px;
-    border-bottom: solid #55B0BC 1px;
+    border-top: solid #6BC4D0 1px;
+    border-bottom: solid #6BC4D0 1px;
 }
 
 li {
@@ -68,7 +53,7 @@ li {
 
 .hero-greeting {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     text-align: center;
     width: 100%;
 }
@@ -98,38 +83,47 @@ aside {
     background-color: #FFFFFF;
     flex: 1.4;
     justify-content: start;
-    padding: .5em;
+    padding: 0em 0.2em 0 0.5em;
     flex-direction: column;
 }
 
 aside > *+* {
-    margin-top: .5em;
+    margin-top: 0.7em;
 }
 
 .main-media-container {
     background-color: #FFFFFF;
     flex: 2;
     font-size: 0.7em;
-    padding: 0.5em;
+    padding: 0 0.5em 1em 0.5em;
     vertical-align: top;
 }
 
 .main-media-container > *+* {
-    padding-top: 0.5em;
+    margin-top:  0.7em;
 }
 
 /***********************************
 DESIGN COMPONENTS
 ************************************/
-.logo a {
-    font-family: Lobster;
-    text-decoration: none;
-    font-size: 1.2em;
+.logo {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    margin: 0;
+}
+
+.search-container {
+    font-size: .93em;
+    width: 233px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
 }
 
 .search-field {
     color: #55B0BC;
-    width: 115px;
+    width: 170px;
     border: solid #55B0BC 0.1em;
     background: transparent;
     padding: 0 0 0.2em 0;
@@ -144,45 +138,31 @@ DESIGN COMPONENTS
     padding: 0.2em 0.4em;
 }
 
-li a {
-    text-transform: capitalize;
-    text-decoration: none;
-}
-
-.hero-greeting > h3 {
-    font-size: 1.72em;
-    font-weight: 300;
-    margin: 0;
-}
-
-.hero-greeting > p {
-    font-size: 0.69em;
-}
-
 .pop-out {
     display: inline-block;
     background-color: #FFFFFF;
     text-align: center;
-    width: 207px;
-    margin: 0 .16em;
-    transform: translateY(-11px);
+    width: 300px;
+    margin: 0 0.35em;
+    transform: translateY(-17px);
 }
 
 .pop-out-header {
     font-weight: 700;
-    font-size: 0.7em;
-    margin: .5em;
+    font-size: 1em;
+    margin: 0.8em;
 }
 
 .pop-out-content {
-    font-size: .7em;
-    margin: 1em;
+    font-size: 1em;
+    margin: 1em 0em;
 }
 
 .aside-media-object {
     background-color: #E8F3F9;
     display: flex;
     align-items: flex-start;
+    margin-top: 0.7em;
 }
 
 .aside-media-content {
@@ -195,8 +175,8 @@ li a {
     display: inline-block;
     background-color: #FF0000;
     padding: 0px;
-    margin: 0.3em;
-    width: 110px;
+    margin: 1em 0.5em 0 0.5em;
+    width: 150px;
     vertical-align: inherit;
 }
 
@@ -212,11 +192,34 @@ li a {
 .media-content-para {
     margin: 0;
     padding: 0 .2em 0 .1em;
+    font-size: 1.5em;
 }
 
 /***********************************
 DESIGN HELPERS
 ************************************/
+.logo a {
+    font-family: Lobster;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.hero-greeting > h3 {
+    font-size: 2.4em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.hero-greeting > p {
+    font-size: 1em;
+}
+
 /*Box Shadows*/
 .pop-out, .main-container {
     -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
@@ -249,62 +252,61 @@ DESIGN HELPERS
     font-weight: 400;
 }
 
-.pop-out > button {
-    font-size: 0.6em;
+.pop-out button {
+    font-size: 0.95em;
     font-weight: 600;
     background: transparent;
     margin-bottom: 0.7em;
+    border-radius: 5px;
 }
 
-.get-help > button {
-    border: solid #E55522 1px ;
-    border-radius: 2px;
+.get-help button {
+    border: solid #E55522 1px;
     color: #E55522;
 }
 
-.food > button {
-    border: solid #8ECE46 1px ;
-    border-radius: 2px;
+.food button {
+    border: solid #8ECE46 1px;
     color: #8ECE46;
 }
 
-.sell > button {
-    border: solid #0792D3 1px ;
-    border-radius: 2px;
+.sell button {
+    border: solid #0792D3 1px;
     color: #0792D3;
 }
 
 .get-help {
-    border-top: solid #E55522 2px;
+    border-top: solid #E55522 3px;
 }
 
 .food {
-    border-top: solid #8ECE46 2px;
+    border-top: solid #8ECE46 3px;
 }
 
 .sell {
-    border-top: solid #0792D3 2px;
+    border-top: solid #0792D3 3px;
 }
 
 .aside-media-content > h4 {
     color: #0792D3;
-    font-size: 1.2em;
+    font-size: 1.8em;
     font-weight: 300;
     margin: 0;
     padding: 0 .2em 0 .1em;
 }
 
 .aside-media-graphic, .aside-media-graphic > img {
-    width: 55px;
-    height: 55px;
+    width: 75px;
+    height: 75px;
 }
 
 .main-media-graphic, .main-media-graphic > img {
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
 }
 
 .main-media-content > h4 {
+    font-size: 1.4em;
     background-color: #8ECF41;
     font-weight: 300;
     padding: 0.2em;
@@ -312,6 +314,7 @@ DESIGN HELPERS
 }
 
 .main-media-content > p {
+    font-size: 1.35em;
     font-weight: 400;
     padding: 0.2em;
     margin: 0;
